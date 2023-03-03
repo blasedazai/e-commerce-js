@@ -1,0 +1,47 @@
+@import "Global.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+.c-wrapper {
+  margin: 0 auto;
+}
+
+/* Common xs1, xs2 mobil*/
+@media all and (max-width: #{($mq-sm1 - 1) + "px"}) {
+  .c-wrapper {
+    width: $c-wrapper-xs;
+  }
+}
+
+/* Common sm1, sm2 tablet */
+@media all and (min-width: #{($mq-sm1) + "px"}) and (max-width: #{($mq-md - 1) + "px"}) {
+  .c-wrapper {
+    width: $c-wrapper-sm;
+  }
+}
+
+@media all and (min-width: #{$mq-md + "px"}) {
+  .c-wrapper {
+    width: $c-wrapper-md;
+  }
+}
+
+.b-item-02::before {
+  content: "\★️ \★️ \★️ \★️ \★️";
+  font-weight: 900;
+  color:darkgray;
+}
+
+.b-item-02-A::before {
+  content: "\★️ \★️ \★️ \★️ \★️";
+  font-weight: 900;
+  color: #f27a1a;
+}
+

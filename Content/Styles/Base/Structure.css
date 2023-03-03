@@ -1,0 +1,42 @@
+@charset "UTF-8";
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background-color: #f0f0f0;
+}
+
+.c-wrapper {
+  margin: 0 auto;
+}
+
+/* Common xs1, xs2 mobil*/
+@media all and (max-width: 767px) {
+  .c-wrapper {
+    width: calc(100% - 32px);
+  }
+}
+/* Common sm1, sm2 tablet */
+@media all and (min-width: 768px) and (max-width: 1319px) {
+  .c-wrapper {
+    width: 760px;
+  }
+}
+@media all and (min-width: 1320px) {
+  .c-wrapper {
+    width: 1300px;
+  }
+}
+.b-item-02::before {
+  content: "★️ ★️ ★️ ★️ ★️";
+  font-weight: 900;
+  color: darkgray;
+}
+
+.b-item-02-A::before {
+  content: "★️ ★️ ★️ ★️ ★️";
+  font-weight: 900;
+  color: #f27a1a;
+}/*# sourceMappingURL=Structure.css.map */
