@@ -55,6 +55,7 @@ var Ecommerce ={
                 checkedIds.push(element.getAttribute("id"))
             }
             Ecommerce.Status.selectedCategory = checkedIds;
+            Ecommerce.Elements.showMore.style.display = "none"
             Ecommerce.Actions.filter()
 
         },
